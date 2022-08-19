@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    const ROOM_ID = "<%= roomId %>"
+  </script>
+  <script defer src="https://unpkg.com/peerjs@1.2.0/dist/peerjs.min.js"></script>
+  <script src="/socket.io/socket.io.js" defer></script>
+  
+  <script src="video.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>SeaU</title>
+</head>
+<body>
+  <div class="main">
+      <div class="main_left">
+          <div class="icon_box">
+               <t style="font-size: 34px;margin-left: 15px; color: white;">SeaU</t>
+              <button class="avbutton" id="video_button" onclick="videobutton()"><i class="fa fa-video-camera"></i>
+                <span>Video Off</span></button>
+              <button class="avbutton" id="audio_button" onclick="audiobutton()">Mute</button>
+          </div>
+          <div class="message_box"style=" font-size: 15px;">
+          </div>
+          <form action="#" id="message_send_box">
+              <input type="text" name="input_message" id="input_message" placeholder="Type a message here">
+              <button class="button" type="send" style=" font-size: 20px;">Send</button>
+          </form>
+      </div>
+      <div class="main_right">
+          <div class="video_block">
+              <div id="video-grid"></div>
+          </div>
+      </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>

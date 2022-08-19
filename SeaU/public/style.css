@@ -1,0 +1,128 @@
+body{
+    height: 96vh;
+    background-image: url('bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+}
+.main{
+    display: flex;
+        flex-direction: row;
+}
+.message_box{
+    margin-top: 1vh;
+    width: 800px;
+    margin: 1vh;
+    height: 72vh;
+    padding: 33px;
+    overflow-y: auto;
+    background-image: url('mbg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 57.5% 90%;
+    border-radius: 10px;
+}
+.message{
+    width: auto;
+    color: white;
+    padding: 10px;
+    margin: 17px 12px;
+    border-radius: 10px;
+    background-image: url('bg1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 70% 100%;
+}
+.left{
+    float: left;
+    clear: both;
+}
+.right{
+
+    float: right;
+    clear: both;
+}
+#message_send_box{
+    display: block;
+    margin: 1vh;
+    width: 100%;
+    max-width: 875px;
+    align-items: center;
+}
+#input_message{
+    width: 760px;
+    color: white;
+    overflow-x: auto;
+    height: 34px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-image: url('bg1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 70% 100%;
+}
+.button{
+    margin-right: 10px;
+    cursor: pointer;
+    height: 34px;
+    width: 90px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    float: right;
+    background-image: url('bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+}
+.avbutton{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-width: 90px;
+    margin: 1px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    float: right;
+    height: 34px;
+    background-image: url('bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+}
+.icon_box{
+    border-left: 5vh;
+    margin: 1vh;
+    max-width: 867px;
+    height: 38px;
+    border-radius: 10px;
+    background-image: url('bg1.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 70% 100%;
+}
+
+#video_grid {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40vh);
+    grid-auto-rows: 40vh;
+  }
+  
+video {
+    padding: auto;
+    width: 40vh;
+    height: 30vh;
+    object-fit: cover;
+    margin: 1vh;
+    border-radius: 10px;
+  }
+.main_right{
+    max-width: 800px;
+}
+.t{
+    color: darkblue;
+}
